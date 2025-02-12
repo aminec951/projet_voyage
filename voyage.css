@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.haut {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.bar {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.barre_recherche {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.barre_recherche input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.barre_recherche button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #22222258;
+    color: rgba(255, 255, 255, 0.145);
+    border: none;
+    cursor: pointer;
+}
+
+.barre_recherche button:hover {
+    background-color: #22222258;
+    color: white;
+    border: 2px solid white;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #22222258;
+    color: rgba(255, 255, 255, 0.145);
+    border: none;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #22222258;
+    color: white;
+    border: 2px solid white;
+}
+
+.connecter {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #22222258;
+    color: rgba(255, 255, 255, 0.145);
+    border: none;
+    cursor: pointer;
+}
+
+.connecter:hover {
+    background-color: #22222258;
+    color: white;
+    border: 2px solid white;
+}
+
+.Slogant {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+.contact-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

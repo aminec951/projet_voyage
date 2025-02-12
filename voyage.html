@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="voyage.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="plage.mp4" type="video/mp4">
+    </video>
+    <div class="haut">
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="reservée.html">Reservé</a></li>
+            </ul>
+            <button id="connect" class="connecter">Se connecter</button>
+        </nav>
+    </div>
+    
+        
+    </div>
+    <h1 class="Slogant">
+        Voyagez selon vos envies
+    </h1>
+    <div class="bar">
+        <form class="barre_recherche">
+            <input type="text" placeholder="Où voulez-vous voyager ?">
+            <button id="idee" type="button">idée de voyage</button>
+        </form>
+    </div>
+    <div id="contact" class="contact-section">
+        <h2>Contactez-nous</h2>
+        <p>Adresse : 123 Rue de l'Exploration, Paris, France</p>
+        <p>Téléphone : +33 1 23 45 67 89</p>
+        <p>Email : contact@aminecsplorateur.com</p>
+    </div>
+    <script>
+        const btntest = document.getElementById('connect');
+        btntest.addEventListener('click', () => {
+            window.location.href = 'seconnecter.html';
+        });
+
+        const btnIdee = document.getElementById('idee');
+        btnIdee.addEventListener('click', () => {
+            window.location.href = 'idée_de_voyage.html';
+        });
+        
+       
+    </script>
+</body>
+</html>
+
